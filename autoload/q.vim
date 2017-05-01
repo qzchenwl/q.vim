@@ -4,7 +4,7 @@ function! q#get_visual_selection()
     let lines = getline(lnum1, lnum2)
     let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
     let lines[0] = lines[0][col1 - 1:]
-    return join(lines, "\n")
+    return join(lines, " ")
 endfunction
 
 function! q#query_selection()
@@ -13,7 +13,7 @@ function! q#query_selection()
 endfunction
 
 function! q#query_file()
-    let l:query = join(getline(1, '$'), "\n")
+    let l:query = join(getline(1, '$'), " ")
     return q#query(l:query)
 endfunction
 

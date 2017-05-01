@@ -1,0 +1,27 @@
+*q.txt* A short multi line description of your plugin
+
+===============================================================================
+CONTENTS                                                                *q*
+
+    1. Intro .................................................... |q-intro|
+    2. Requirements ...................................... |q-requirements|
+    3. Usage .................................................... |q-usage|
+    4. Licence ................................................ |q-licence|
+===============================================================================
+1. Intro                                                          *q-intro*
+
+Overview of plugin
+
+2. Requirements                                            *q-requirements*
+
+What additional programs are required to run the plugin
+
+3. Usage                                                          *q-usage*
+
+How to use the plugin. What functions does it give the user?
+
+4. Licence                                                      *q-licence*
+
+This is open source make sure to include a licence
+
+vim:ft=help

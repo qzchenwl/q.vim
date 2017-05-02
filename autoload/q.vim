@@ -1,10 +1,10 @@
 function! q#get_visual_selection()
-    let [lnum1, col1] = getpos("'<")[1:2]
-    let [lnum2, col2] = getpos("'>")[1:2]
-    let lines = getline(lnum1, lnum2)
-    let lines[-1] = lines[-1][: col2 - (&selection == 'inclusive' ? 1 : 2)]
-    let lines[0] = lines[0][col1 - 1:]
-    return join(lines, " ")
+    let [l:num1, l:col1] = getpos("'<")[1:2]
+    let [l:num2, l:col2] = getpos("'>")[1:2]
+    let l:lines = getline(l:num1, l:num2)
+    let l:lines[-1] = l:lines[-1][: l:col2 - (&selection == 'inclusive' ? 1 : 2)]
+    let l:lines[0]  = l:lines[0][l:col1 - 1:]
+    return join(l:lines, " ")
 endfunction
 
 function! q#query_selection()
